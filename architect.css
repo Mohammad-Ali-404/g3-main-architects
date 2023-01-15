@@ -232,10 +232,42 @@ footer{
 media query and responsive section style For Mobile
 **********************************/
 @media screen and (max-width:576px) {
-    .section-description{
+
+    .section-description, .header-banner{
         width: 100%;
     }
-    .fact-section2, .features{
+    .quick-list, nav , nav ul{
         flex-direction: column;
+    
     }
+    .features-img{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: end;
+    }
+    .fact-section2 {
+        width: 100%;
+        flex-direction: column;
+        margin:40px 0;
+    }
+   .fact-content{
+    margin: 20px 60px;
+   }
+    img{
+    width: 100%;
+   }
+   .features{
+    flex-direction: column;
+    width: 100%;
+   }
+   .features-content{
+    width: 100%;
+    padding: 0 60px;
+   }
+   .button-experience{
+    margin: 20px 80px;
+   }
 }
+
+/* .fact-section, .sponsor-section, .quick-list{
+    display: none;
+} */
